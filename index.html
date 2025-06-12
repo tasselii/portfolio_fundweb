@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+  <!-- Servidores de Fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+  <!-- Fonte do Google - Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta naem="description" content="Projeto Portfólio do Thiago, desenvolvedor web fullstack.">
   <meta name="author" content="Thiago Tasseli">
   <meta name="keywords" content="portfólio, desenvolvedor, web, fullstack, Thiago Tasseli, HTML, CSS, JavaScript">
   <link rel="icon" href="./assets/img/favicon.svg" />
+
+  <!-- Link para o arquivo CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+
   <title>Portfolio do Thiago Tasseli</title>
 </head>
 <body>
   <!-- Cabeçalho a página -->
-  <header>
+  <header class="flex menu_container">
         <!-- Título do cabeçalho -->
-        <div id="header_content">
+        <div id="header_content" class="menu_content">
           <div id="titulo">
               <a href="#">Thiago Tasseli</a>
           </div>
         </div>
 
         <!-- Menu -->
-        <div id="menu">
-            <ul>
+        <div id="menu" class="flex">
+            <ul class="flex menu_list">
               <li><a href="#">Home</a></li>
               <li><a href="#about">Sobre</a></li>
               <li><a href="#contact">Contatos</a></li>
@@ -33,52 +45,65 @@
    <main>
 
         <!-- Seção home -->
-        <section id="home">
-              <article id="home_texto">
+        <section id="home" class="flex home_container">
+              <article id="home_texto" class="flex home_content">
                       <h4>Bem-vindo ao Novo Universo</h4>
                       <h1>Mundo diferentes para pessoas diferentes</h1>
                       <p>Bacon ipsum dolor sit amet jerky tongue kielbasa, doner ham hock ribeye swine leberkas sirloin filet mignon tail meatball hamburger. Bresaola ground round kielbasa, beef ribs beef brisket pancetta pork chop jowl ball tip corned beef</p>
-                      <a href="https://github.com/tasselii" target="_blank">Explorar</a>
+                      <a class="botao" href="https://github.com/tasselii" target="_blank">Explorar</a>
               </article>
-              <article id="home_imagem">
+              <article id="home_imagem" class="flex home_content">
                       <img src="./assets/img/astronauta.svg" alt="Capacete do Astronauta com animação" />
               </article>
         </section>
 
-        <!-- Seção Sobre -->
-        <section id="about">
-              <img src="./assets/img/user_01.svg" alt="Capacete do Astronauta com animação" />
+         <!-- Seção Sobre -->
+        <section id="about" class="flex sobre_container">
 
-              <article id="about_texto">
+            <!-- Imagem da seção Sobre -->
+            <img src="./assets/img/user_01.svg" alt="Foto do perfil do Github" />
+
+            <!-- Texto da seção Sobre -->
+            <article id="about_texto">
                 <h1>Sobre mim</h1>
-                <p>Bacon ipsum dolor sit amet jerky tongue kielbasa, doner ham hock ribeye swine leberkas sirloin filet mignon tail meatball hamburgesaer. Brola ground round kielbasa, beef ribs beef brisket pancetta pork chop jowl ball tip corned beef</p>
+                <p>Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Quem manda
+                    na minha terra sou euzis! A ordem dos tratores não altera o pão duris. Copo furadis é disculpa de
+                    bebadis, arcu quam euismod magna.</p>
 
-                <div>
-                  <a href="https://github.com/tasselii" target="_blank">Gitub</a>
-                  <p>200 seguidores</p>
-                  <p>20 repositórios</p>
+                <div id="about_github" class="flex sobre_github">
+                    <a href="https://github.com/rafaelq80" target="_blank" class="botao">Github</a>
+                    <p>200 seguidores</p>
+                    <p>20 repositórios</p>
                 </div>
-              </article>
+            </article>
+
         </section>
 
         <!-- Seção contatos -->
-        <section id="contact">
+        <section id="contact" class="contato_container">
+              <article id="redes_sociais" class="contato_content">
               <h4>Contate-me</h4>
               <p>Bacon ipsum dolor sit amet jerky tongue kielbasa, doner ham hock ribeye swine leberkas sirloin filet mignon tail meatball hamburger. Bresaola ground round kielbasa, beef ribs beef brisket pancetta pork chop jowl ball tip corned beefv</p>
-              <div id="icones_redes_sociais">
+              
+               <!-- REDES SOCIAIS  -->
+              
+              <div id="icones_redes_sociais" class="social_container">
 
-                <a href="https://www.linkedin.com/in/thiagotasseli-tech/" target="_blank">
+                <a class="social_icon" href="https://www.linkedin.com/in/thiagotasseli-tech/" target="_blank">
                   <img src="./assets/img/linkedin.svg" alt="Icone do linkedin">
                 </a>
 
-                <a href="https://github.com/tasselii" target="_blank">
+                <a class="social_icon" href="https://github.com/tasselii" target="_blank">
                   <img src="./assets/img/github.svg" alt="Icone do GitHub">
                 </a>
 
-                <a href="https://www.instagram.com/tasseli1/" target="_blank">
+                <a class="social_icon" href="https://www.instagram.com/tasseli1/" target="_blank">
                   <img src="./assets/img/instagram.svg" alt="Icone do Instagram">
                 </a>
               </div>
+              </article>
+
+              <!-- FORMULARIO -->
 
               <form action="" method="POST">
                     <label for="nome">Nome</label>
@@ -101,7 +126,7 @@
 
                     <span id="txtEmail"></span>
 
-                    <label for="assunto">assunto</label>
+                    <label for="assunto">Assunto</label>
                     <input 
                     id="assunto" 
                     name="assunto"
@@ -113,13 +138,12 @@
 
                     <label for="mensagem">Mensagem</label>
                     <textarea 
-                    id="mensagem"
-                    name="mensagem" 
-                    placeholder="Digite a sua mensagem"
-                    >
-                  </textarea>
+                      id="mensagem"
+                      name="mensagem" 
+                      placeholder="Digite a sua mensagem"
+                    ></textarea>
 
-                  <button type="submit">Enviar</button>
+                  <button class="botao" type="submit">Enviar</button>
               </form>
         </section>
    </main>
