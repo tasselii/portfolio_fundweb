@@ -1,0 +1,52 @@
+/* Estilos específicos para a página de sucesso */
+
+.sucess_container {
+  flex-direction: column;
+  height: calc(100vh - 10rem); /* Ajusta a altura para considerar o header e footer */
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sucess_container h1 {
+  font-size: 2.5rem;
+  color: var(--purple-800); /* Usando a cor do tema principal */
+  margin-bottom: 1rem;
+}
+
+.sucess_container p {
+  font-size: 1.2rem;
+  color: var(--black-800); /* Usando a cor do tema principal */
+  margin-bottom: 2rem;
+}
+
+.sucess_container .botao {
+  width: auto;
+  padding: 0.8rem 2.5rem;
+}
+
+/* Footer fixo para a página de sucesso */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 960px){
+    .sucess_container{
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .sucess_container h1{
+        font-size: 2rem;
+    }
+
+    .sucess_container p{
+        font-size: 1rem;
+    }
+}
+

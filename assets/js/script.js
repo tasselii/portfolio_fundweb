@@ -1,5 +1,4 @@
 // ========================================
-// PORTFOLIO TEAM LIQUID - JAVASCRIPT
 // Funcionalidades e interatividade
 // ========================================
 
@@ -117,13 +116,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ========================================
-    // FORMULÁRIO DE CONTATO
-    // ========================================
+// FORMULÁRIO DE CONTATO
+// ========================================
 
-    const formulario = document.querySelector("#formulario")
-    const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+const formulario = document.querySelector("#formulario");
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    formulario.addEventListener("submit", function(event) {
+formulario.addEventListener("submit", function(event) {
     event.preventDefault();
 
     const campoNome = document.querySelector("#nome");
@@ -139,7 +138,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const campoEmail = document.querySelector("#email");
     const txtEmail = document.querySelector("#txtEmail");
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!campoEmail.value.match(emailRegex)) {
         txtEmail.innerHTML = "Digite um e-mail válido";
@@ -160,10 +158,10 @@ document.addEventListener('DOMContentLoaded', function() {
         txtAssunto.innerHTML = "";
     }
 
-    // Enviar o e-mail
-    formulario.submit();
-    });
-    
+    // Enviar o formulário após validação
+    formulario.submit(); // ou: formulario.requestSubmit();
+});
+
 
     // ========================================
     // SISTEMA DE NOTIFICAÇÕES
