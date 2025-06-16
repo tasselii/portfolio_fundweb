@@ -1,0 +1,30 @@
+<!-- Favicon SVG -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#009DFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFCE00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="32" height="32" fill="#0F1620" rx="6"/>
+  
+  <!-- Main D letter -->
+  <path d="M8 6 L8 26 L18 26 C22 26 25 23 25 19 L25 13 C25 9 22 6 18 6 Z M12 10 L18 10 C19.5 10 21 11.5 21 13 L21 19 C21 20.5 19.5 22 18 22 L12 22 Z" fill="url(#logoGradient)"/>
+  
+  <!-- Circuit elements -->
+  <circle cx="15" cy="12" r="1" fill="#009DFF" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="15" cy="20" r="1" fill="#009DFF" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  
+  <!-- Connecting lines -->
+  <line x1="15" y1="13" x2="15" y2="19" stroke="#009DFF" stroke-width="0.5" opacity="0.6"/>
+  
+  <!-- Accent dot -->
+  <circle cx="26" cy="8" r="1.5" fill="#FFCE00"/>
+</svg>
+
