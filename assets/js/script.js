@@ -584,7 +584,7 @@ async function getApiGitHub() {
                     <div class="about-text">
                         <h3>Desenvolvedor Full Stack</h3>
                         <p>Iniciei minha jornada técnica instalando, configurando e padronizando sistemas de redes, onde desenvolvi senso de organização, atenção aos detalhes e resolução de problemas. Em seguida, empreendi com um delivery de açaí, atuando em todas as frentes — do atendimento à logística — e implementando controles de dados para otimizar a operação. Essa vivência me aproximou da tecnologia e despertou meu interesse por soluções automatizadas.</p>
-                        <p>Hoje, mergulhado em um bocam intensivo de Java Fullstack, aplico esse repertório no desenvolvimento de APIs RESTful, CRUDs, e na prática de POO com Java e Spring Boot. Utilizo MySQL, Git/GitHub, e ferramentas como Postman/Insomnia para testes, enquanto participo de projetos ágeis que simulam o ambiente real de desenvolvimento. Unindo teoria e prática, sigo evoluindo como desenvolvedor com foco em eficiência e entrega de valor.</p>
+                        <p>Hoje, mergulhado em um bootcamp intensivo de Java Fullstack, aplico esse repertório no desenvolvimento de APIs RESTful, CRUDs, e na prática de POO com Java e Spring Boot. Utilizo MySQL, Git/GitHub, e ferramentas como Postman/Insomnia para testes, enquanto participo de projetos ágeis que simulam o ambiente real de desenvolvimento. Unindo teoria e prática, sigo evoluindo como desenvolvedor com foco em eficiência e entrega de valor.</p>
                         <div class="about-stats">
                             <div class="stat-item">
                                 <h4>${perfil.public_repos}</h4>
