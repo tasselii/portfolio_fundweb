@@ -601,7 +601,7 @@ async function getApiGitHub() {
                         </div>
                         <div class="about-buttons">
                             <a href="${perfil.html_url}" class="btn btn-primary" target="_blank">Github</a>
-                            <a href="./assets/docs/CV-THIAGO-TASSELI-GENERATION.pdf" class="btn btn-outline" download>Download CV</a>
+                            <a href="./assets/docs/cv-thiago-tasseli.pdf" class="btn btn-outline" download>Download CV</a>
                         </div>
                     </div>
                 </div>
